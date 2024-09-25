@@ -9,6 +9,8 @@
 // structure of a document as a tree of objects, which can be manipulated using a
 // programming language such as JavaScript.
 
+// ---------------------------------------------------
+
 // How get started with the DOM:
 
 // 1. Open the browser console
@@ -37,3 +39,5 @@
 // 7. You may note that the document object is very similar to the elements that
 // are displayed on the web page. This is because the document object is the root
 // of the DOM tree, and all other elements are descendants of the document object.
+
+// ---------------------------------------------------
