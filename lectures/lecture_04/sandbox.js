@@ -99,4 +99,3 @@ newHeader.id = 'third-header';
 // the DOM using JavaScript.
 
 // ---------------------------------------------------
-
