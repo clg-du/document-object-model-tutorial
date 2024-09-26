@@ -5,10 +5,6 @@
 // It represents the structure of a document as a tree of objects, which can be
 // manipulated using a programming language such as JavaScript.
 
-// The DOM is a programming interface for web documents. It represents the
-// structure of a document as a tree of objects, which can be manipulated using a
-// programming language such as JavaScript.
-
 // ---------------------------------------------------
 
 // How get started with the DOM:
