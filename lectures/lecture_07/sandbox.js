@@ -21,31 +21,25 @@ document.querySelector('h1').classList.add('display-4', 'text-center', 'mb-4', '
 // This div tag will have the Bootstrap class row.
 document.querySelector('.container').innerHTML = '<div class="row">' + document.querySelector('.container').innerHTML + '</div>';
 
-// Select the remaining div tags on the page and add the Bootstrap class col-md-4
-// to them. This will make the div tags stack horizontally on medium devices and
-// larger.
+// Select the remaining div tags on the page and add the Bootstrap class
+// col-md-4 to them. This will make the div tags stack horizontally on medium
+// devices and larger.
 document.querySelectorAll('.container div div').forEach(div => div.classList.add('col-4'));
-
-// Well... that looks awful... Let's spread them out evenly across the page by
-// adding the Bootstrap class justify-content-around to the row div tag.
-document.querySelector('.row').classList.add('justify-content-around');
 
 // Hmm... Let's adjust this so that we stack Part 1 and Part 2 on top of each
 // other. I will move the content of the second div tag after the content within
 // the first div tag.
-document.querySelector('.container div div:nth-child(2)').innerHTML = 
-document.querySelector('.container div div:nth-child(1)').innerHTML +
-document.querySelector('.container div div:nth-child(2)').innerHTML;
+document.querySelector('.container div div:nth-child(2)').innerHTML =
+    document.querySelector('.container div div:nth-child(1)').innerHTML +
+    document.querySelector('.container div div:nth-child(2)').innerHTML;
 
-// I'll remove the first div tag, as it is repetitive, and change the first div to col-4 and the second div to col-8
+// I'll remove the first div tag, as it is repetitive, and change the second div
+// to col-8 instead of col-4
 document.querySelector('.container div div:nth-child(1)').remove();
-document.querySelector('.container div div:nth-child(1)').classList.remove('col-4');
-document.querySelector('.container div div:nth-child(1)').classList.add('col-4');
 document.querySelector('.container div div:nth-child(2)').classList.remove('col-4');
 document.querySelector('.container div div:nth-child(2)').classList.add('col-8');
 
-// And now let's center the content of the second div tag vertically by adding
-// the Bootstrap class align-items-center to the row div tag.
+// And now let's center the content
 document.querySelector('.row').classList.add('align-items-center');
 
 // ---------------------------------------------------
