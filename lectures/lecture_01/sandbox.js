@@ -16,8 +16,7 @@
 
 // 3. Press Enter
 
-// 4. You should see the following output:
-// [object HTMLDocument]
+// 4. You should see document object, which you can expand.
 
 // 5. This is the document object, which represents the web page in the browser.
 // The document object has properties and methods that can be used to interact
